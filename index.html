@@ -15,7 +15,9 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <!-- tailwind-css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <title>Tailwind.css</title>
     <link rel="stylesheet" href="style.css">
 
@@ -42,7 +44,56 @@
 <body>
     <header class="lg:py-[50px] md:py-[25px] py-[50px] bg-[#FFFBF0]">
         <div class="container max-w-9\12 px-[30px] m-auto box-border">
-            <div class="main-column flex justify-between">
+
+
+            <div class="navbar bg-base-100 flex justify-between">
+                <div class="">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Item 1</a></li>
+                      <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                    <a class="btn btn-ghost text-xl"><h2 class="font-semibold text-[25px] ml-3"><span class="text-[#A4BC46]">Penguin</span> Fashion</h2></a>
+                  </div>
+                 
+                </div>
+
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal  px-1">
+                    <li><a>Item 1</a></li>
+                    <li>
+                      <details>
+                        <summary>Parent</summary>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li><a>Item 3</a></li>
+                  </ul>
+                  <div class="">
+                    <a class="btn">Button</a>
+                  </div>
+               
+                  
+                </div>
+                <div class="lg:hidden">
+                    <a class="btn">Button</a>
+                  </div>
+               
+              </div>
+            <!-- <div class="main-column flex justify-between">
 
                 <div class="flex-column2 flex">
                     <img src="./images/Frame.svg" alt="">
@@ -58,8 +109,8 @@
                             <li><a href="">Contact us</a></li>
                         </ul>
                     </nav>
-                </div>
-            </div>
+                </div> -->
+          
 
 
             <div class=" flex flex-col justify-between gap-10 my-10 items-center md:flex-row ">
@@ -86,6 +137,7 @@
 
 
         </div>
+    </div>
 
     </header>
 
@@ -216,6 +268,41 @@
                 </div>
 
             </div>
+    </section>
+
+    <section class="shop-center my-24">
+        <div class="container max-w-9\12 px-[30px] m-auto box-border">
+            <div class="flex md:flex-row flex-col-reverse gap-[20px] md:gap-[50px] items-center">
+                <div class="md:w-[50%] w-[100%]">
+                    <div class="flex items-center px-6 py-7 shadow-lg rounded-[20px]">
+                        <div><img  class="w-20" src="./images/house.png" alt=""></div>
+                        <div class="ml-5">
+                            <h3 class="roboto text-6 font-bold">Find the Perfect Fit</h3>
+                            <p class="text-[16px]">Everybody is different, which is why we
+                                offer styles for every body.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center px-6 py-7 shadow-lg my-10 rounded-[20px]">
+                        <div><img class="w-20" src="./images/box.png" alt=""></div>
+                        <div class="ml-5">
+                            <h3 class="roboto text-6 font-bold">Find the Perfect Fit</h3>
+                            <p class="text-[16px]">Everybody is different, which is why we
+                                offer styles for every body.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center px-6 py-7 shadow-lg rounded-[20px]">
+                        <div><img class="w-20" src="./images/question.png" alt=""></div>
+                        <div class="ml-5">
+                            <h3 class="roboto text-6 font-bold">Find the Perfect Fit</h3>
+                            <p class="text-[16px]">Everybody is different, which is why we
+                                offer styles for every body.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="md:w-[50%] w-[100%]"><img class="w-full" src="./images/shopping.png" alt=""></div>
+            </div>
+        </div>
     </section>
 
 
